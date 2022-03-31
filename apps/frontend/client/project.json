@@ -1,24 +1,24 @@
 {
   "projectType": "application",
-  "root": "apps/trynka/client",
-  "sourceRoot": "apps/trynka/client/src",
+  "root": "apps/frontend/client",
+  "sourceRoot": "apps/frontend/client/src",
   "prefix": "trynka",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/trynka/client",
-        "index": "apps/trynka/client/src/index.html",
-        "main": "apps/trynka/client/src/main.ts",
-        "polyfills": "apps/trynka/client/src/polyfills.ts",
-        "tsConfig": "apps/trynka/client/tsconfig.app.json",
+        "outputPath": "dist/apps/frontend/client",
+        "index": "apps/frontend/client/src/index.html",
+        "main": "apps/frontend/client/src/main.ts",
+        "polyfills": "apps/frontend/client/src/polyfills.ts",
+        "tsConfig": "apps/frontend/client/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/trynka/client/src/favicon.ico",
-          "apps/trynka/client/src/assets"
+          "apps/frontend/client/src/favicon.ico",
+          "apps/frontend/client/src/assets"
         ],
-        "styles": ["apps/trynka/client/src/styles.scss"],
+        "styles": ["apps/frontend/client/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +37,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/trynka/client/src/environments/environment.ts",
-              "with": "apps/trynka/client/src/environments/environment.prod.ts"
+              "replace": "apps/frontend/client/src/environments/environment.ts",
+              "with": "apps/frontend/client/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -76,16 +76,16 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/trynka/client/src/**/*.ts",
-          "apps/trynka/client/src/**/*.html"
+          "apps/frontend/client/src/**/*.ts",
+          "apps/frontend/client/src/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/trynka/client"],
+      "outputs": ["coverage/apps/frontend/client"],
       "options": {
-        "jestConfig": "apps/trynka/client/jest.config.js",
+        "jestConfig": "apps/frontend/client/jest.config.js",
         "passWithNoTests": true
       }
     }
