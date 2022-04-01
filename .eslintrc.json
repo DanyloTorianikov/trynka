@@ -13,8 +13,12 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:trynka-client",
+                "onlyDependOnLibsWithTags": ["scope:trynka-client"]
+              },
+              {
+                "sourceTag": "scope:frontend-admin",
+                "onlyDependOnLibsWithTags": ["scope:frontend-admin"]
               }
             ]
           }
