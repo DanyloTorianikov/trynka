@@ -5,6 +5,12 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
+    "trynka-client:start": "nx serve trynka-client",
+    "trynka-client:build": "nx build trynka-client",
+    "trynka-client:test": "nx test trynka-client",
+    "frontend-admin:start": "nx serve frontend-admin",
+    "frontend-admin:build": "nx build frontend-admin",
+    "frontend-admin:test": "nx test frontend-admin",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test"
