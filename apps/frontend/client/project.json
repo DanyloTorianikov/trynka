@@ -65,7 +65,10 @@
           "port": 4200
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/frontend/client/proxy.conf.json"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -91,5 +94,5 @@
       }
     }
   },
-  "tags": ["scope:trynka-client"]
+  "tags": ["scope:trynka-client", "type:app"]
 }
