@@ -14,7 +14,7 @@
             "depConstraints": [
               {
                 "sourceTag": "scope:trynka-client",
-                "onlyDependOnLibsWithTags": ["scope:trynka-client"]
+                "onlyDependOnLibsWithTags": ["scope:trynka-client", "type:lib"]
               },
               {
                 "sourceTag": "scope:frontend-admin",
