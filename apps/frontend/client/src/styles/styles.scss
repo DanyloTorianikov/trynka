@@ -1,3 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "utils.scss"
+@import "utils.scss";
+
+/*
+ * Import and generate bootstrap and angular.material theme
+ * with app params
+*/
+@import "ws-styles/themes";
+
+/**
+ * Import common style
+*/
+@import "ws-styles/base";

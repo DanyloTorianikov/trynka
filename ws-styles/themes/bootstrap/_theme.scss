@@ -1,0 +1,10 @@
+// Import bootstrap mixins
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+@import "../../../node_modules/bootstrap/scss/mixins/grid";
+
+// Import bootstrap styles
+@import '../../../node_modules/bootstrap/scss/containers';
