@@ -29,5 +29,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    "type:lib",
+    "scope:shared",
+    "lib-type:data-access"
+  ]
 }
