@@ -21,6 +21,14 @@
                 ]
               },
               {
+                "sourceTag": "scope:backend-api",
+                "onlyDependOnLibsWithTags": [
+                  "scope:trynka-client",
+                  "type:lib",
+                  "scope:shared"
+                ]
+              },
+              {
                 "sourceTag": "scope:frontend-admin",
                 "onlyDependOnLibsWithTags": [
                   "scope:frontend-admin",
