@@ -23,7 +23,7 @@
               {
                 "sourceTag": "scope:backend-api",
                 "onlyDependOnLibsWithTags": [
-                  "scope:trynka-client",
+                  "scope:backend-api",
                   "type:lib",
                   "scope:shared"
                 ]
