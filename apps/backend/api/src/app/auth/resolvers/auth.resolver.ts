@@ -1,5 +1,5 @@
 import { Query, Resolver } from "@nestjs/graphql";
-import { ISignAuthPayload, ISignAuthResponse } from "@trynka/shared/data-access/interfaces";
+import type { ISignAuthPayload, ISignAuthResponse } from "@trynka/shared/data-access/interfaces";
 import { SignIn } from "../decorators/auth.decorator";
 import { AuthService } from "../services/auth.service";
 
