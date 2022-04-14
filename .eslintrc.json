@@ -14,11 +14,53 @@
             "depConstraints": [
               {
                 "sourceTag": "scope:trynka-client",
-                "onlyDependOnLibsWithTags": ["scope:trynka-client", "type:lib"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:trynka-client",
+                  "type:lib",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:backend-api",
+                "onlyDependOnLibsWithTags": [
+                  "scope:backend-api",
+                  "type:lib",
+                  "scope:shared"
+                ]
               },
               {
                 "sourceTag": "scope:frontend-admin",
-                "onlyDependOnLibsWithTags": ["scope:frontend-admin"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:frontend-admin",
+                  "type:lib"
+                ]
+              },
+              {
+                "sourceTag": "lib-type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "lib-type:data-access",
+                  "lib-type:utils",
+                  "lib-type:feature",
+                  "lib-type:ui"
+                ]
+              },
+              {
+                "sourceTag": "lib-type:ui",
+                "onlyDependOnLibsWithTags": [
+                  "lib-type:ui",
+                  "lib-type:utils"
+                ]
+              },
+              {
+                "sourceTag": "lib-type:data-access",
+                "onlyDependOnLibsWithTags": [
+                  "lib-type:data-access",
+                  "lib-type:utils"
+                ]
+              },
+              {
+                "sourceTag": "lib-type:utils",
+                "onlyDependOnLibsWithTags": ["lib-type:utils"]
               }
             ]
           }
