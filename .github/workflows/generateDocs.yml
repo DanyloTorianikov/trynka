@@ -1,0 +1,37 @@
+name: Generate documentation
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - 
+        name: Copy branch [master]
+        uses: actions/checkout@v2
+      - 
+        name: Install NodeJs
+        uses: actions/setup-node@v3.1.1
+        with:
+          node-version: '14'
+      - 
+        name: Install dependencies
+        run: npm install      
+      - 
+        name: Run compodoc
+        run:  nx affected --all --target=compodoc --parallel=1
+      - 
+        name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_GH_PAGE }}
